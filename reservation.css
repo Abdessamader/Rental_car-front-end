@@ -1,0 +1,52 @@
+*{
+    margin:0;
+  }
+  .log{
+    color: white;
+    font-size:2.2rem;
+    position:absolute; 
+    margin:20px;
+  }
+  .nav-ul{
+    display:flex;
+    justify-content:flex-end;
+    list-style-type:none;
+    padding: 22px ;
+    background-color: #181818;
+  }
+  
+  a{
+    color:#fff;
+    font-size:18px;
+    text-decoration:none;
+    padding: 0px 18px;
+  }
+  a:hover{
+    font-weight: bolder;
+  }
+.img-cars{
+ 
+    border-radius: 180px;
+    width:250px;
+    height:auto;
+   margin:0 20px 20px 20px;
+   
+}
+img{
+    cursor: pointer;
+  }
+  .cars , .motor , .trucks{
+    display:flex;
+    overflow-x: scroll;
+  }
+  .cars::-webkit-scrollbar
+  {
+    display:none;
+  }
+.op{
+    opacity: 0.3;
+}
+
+.carburant{
+  display: flex;
+}

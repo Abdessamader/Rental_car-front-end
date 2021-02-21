@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  
+  <h3 class="log">RCars</h3>
+  <div class="nav">
+    <ul class="nav-ul">
+      <li> <a  href="index.html">Home</a></li>
+      <li> <a  href="Gallery.html"> Gallery</a></li>
+      <li> <a  href="reservation.html"> Reservation</a></li>
+      <li> <a  href="contact-us.html"> Contact us</a></li>
+      <li><img id="icon-nave" class="icon-nav" src="/icon/bars-solid.svg" alt=""></li>
+    </ul>
+    <ul id="nav-ul-1" class="nav-ul-1">
+      <li> <a id="a1" href="index.html">Home</a></li>
+      <li> <a id="a1" href="Gallery.html"> Gallery</a></li>
+      <li> <a id="a1" href="reservation.html"> Reservation</a></li>
+      <li> <a id="a1" href="contact-us.html"> Contact us</a></li>
+     
+    </ul>
+  </div>
+  <h1>Select a veicule</h1>
+  
+  <div class="cars">
+    <img  class="img-cars " onclick="Reservation_citadine()" src="my images/car1.png"  alt="">
+    <img  class="img-cars " onclick="Reservation_utilitaire()" src="/my images/car2.png"  alt="">
+    <img  class="img-motor" onclick="Reservation_moto()" src="/my images/moto1.png" alt="">
+    <img  class="img-cars " onclick="Reservation_compact()" src="/my images/car4.png" alt="">
+    <img  class="img-cars " onclick="Reservation_camion()" src="/my images/Truck1.png" alt="">
+    <img  class="img-cars " onclick="Reservation_berline()" src="/my images/car5.png" alt="">
+    <img  class="img-cars " onclick="Reservation_engin_de_chantier()" src="/my images/traktor.png" alt="">
+
+</div>
+
+
+
+<h1>Carburant</h1>
+
+<div class="carburant">
+  <div id="Diesel">
+    <label > Diesel</label>
+    <input type="radio" name="carburant">
+  </div>
+  <div id="Electrique">
+    <label > Electrique</label>
+    <input type="radio" name="carburant" >
+  </div>
+  <div id="Hybrade">
+    <label > Hybrade</label>
+    <input type="radio" name="carburant" >
+  </div>
+  <div  id="Essence">
+    <label > Essence</label>
+    <input type="radio" name="carburant" >
+  </div>
+</div>
+
+<h1>Boite à Vitesse</h1>
+
+<div class="man-auto">
+  <div id="Manuelle">
+    <label > Manuelle</label>
+    <input type="radio" name="manAuto">
+  </div>
+  <div id="Automatique">
+    <label > Automatique</label>
+    <input type="radio" name="manAuto" >
+  </div>
+</div>
+
+<h1>Durée de jours</h1>
+<div class="durée">
+  <input type="text" name="" placeholder="Durée" id="days">
+  <label id="prix">prix</label>
+</div>
+ 
+<input class="reserv-btn" type="submit" value="Reservation Now" onclick="calcul()">
+
+   
+
+
+
+  </body>
+
+
+
+<!--  footer -->
+<footer>
+  <div class="box">
+    <h5>ABOUT</h5>
+    <p class="par-footer">RCars is a modern rental car company that aims to provide all types of cars for the
+      costumors needs
+      beginning from basic economy cars to luxury and high speed sportive cars . </p>
+  </div>
+  <div class="box1">
+    <h5>CATEGORIES</h5>
+    <ul class="ul-footer">
+      <li> Cars</li>
+      <li> Motorcycles</li>
+      <li> Trucks</li>
+    </ul>
+  </div>
+  
+</footer>
+<div class="copyright">Copyright © 2021 All Rights Reserved by RCars.</div>
+  <script src="reservation.js"></script>
+  <script>
+    var icon = document.getElementById("icon-nave")
+    var navUl1 = document.getElementById("nav-ul-1");
+    var h_style = document.querySelector("h1");
+    navUl1.style.display = 'none'; 
+    icon.addEventListener("click",function(){
+      if(navUl1.style.display == 'flex')
+      {
+        navUl1.style.display = 'none'; 
+        h_style.style.margin = '40px 0px 10px 0px';
+        
+      }
+      else
+      {
+        navUl1.style.display = 'flex';
+        h_style.style.marginTop = '40px';
+      }
+    })
+    
+  </script>
+
+
+
+  </html>

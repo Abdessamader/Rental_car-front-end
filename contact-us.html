@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact-us.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Contact-us</title>
+   
+</head>
+
+<body>
+    <h1> Contact us </h1>
+      <div class="form" >
+        <input class="contact-text" type="text" placeholder="Name" id="name">
+        <p id="mName" class="error"></p>
+        <input class="contact-text" type="email" placeholder="Email-address"  id="email">
+        <p id="mEmail" class="error"></p>
+        <input class="contact-text" type="text" placeholder="Subject" id="subject">  
+        <p id="mSubject" class="error"></p>
+        <textarea class="contact-text" placeholder="Message" id="message"></textarea>
+        <p id="mMessage" class="error"></p>
+        <button onclick="validation()">send</button>
+      </div>
+      
+
+
+
+
+      <script>
+     
+      var i = 0;
+
+    function validateEmail(elementValue){      
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(elementValue); 
+  }
+
+  function validate(elementValue){      
+    var Pattern = /^[a-zA-Z._-]+?$/;
+    return Pattern.test(elementValue); 
+  }
+        function validation()
+        {
+          var name=document.getElementById("name");
+          if(name.value==""|| !validate(name.value))
+          {
+            document.getElementById("mName").innerHTML="Veillez saisir votre Nom";
+            i=0;
+          }else
+          {
+            document.getElementById("mName").innerHTML="";
+            i++;
+          }
+
+
+          var email=document.getElementById("email");
+          if(email.value==""|| !validateEmail(email.value))
+          {
+            document.getElementById("mEmail").innerHTML="Veillez saisir votre Email-address";
+            i=0;
+          }else
+          {
+            document.getElementById("mEmail").innerHTML="";
+            i++;
+          }
+
+
+          var subject=document.getElementById("subject");
+          if(subject.value==""|| !validate(subject.value))
+          {
+            document.getElementById("mSubject").innerHTML="Veillez saisir votre Sujet";
+            i=0;
+          }else
+          {
+            document.getElementById("mSubject").innerHTML="";
+            i++;
+          }
+         
+
+
+          
+          var message=document.getElementById("message");
+          if(message.value==""|| !validate(message.value))
+          {
+            document.getElementById("mMessage").innerHTML="Veillez saisir votre message";
+            i=0;
+          }else
+          {
+            if (message.value.length >50){
+            document.getElementById("mMessage").innerHTML="";
+            i++;
+          }
+          else{
+            document.getElementById("mMessage").innerHTML = "Message is lower than 100 characters";
+            i=0;
+          }
+
+          }
+
+
+          if (i > 5)
+          {
+            alert("hello motherFuckers");
+          }
+
+        }
+ 
+
+      </script>
+
+
+
+
+</body>
+</html>

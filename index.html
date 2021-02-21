@@ -1,0 +1,137 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <title>Document</title>
+
+</head>
+
+<body>
+
+
+  <!--  Navbar   -->
+  <h3 class="log">RCars</h3>
+  <div class="first-container">
+    <div class="nav">
+      <ul class="nav-ul">
+        <li> <a  href="index.html">Home</a></li>
+        <li> <a  href="Gallery.html"> Gallery</a></li>
+        <li> <a  href="reservation.html"> Reservation</a></li>
+        <li> <a  href="contact-us.html"> Contact us</a></li>
+        <li><img id="icon-nave" class="icon-nav" src="/icon/bars-solid.svg" alt=""></li>
+      </ul>
+      <ul id="nav-ul-1" class="nav-ul-1">
+        <li> <a id="a1" href="index.html">Home</a></li>
+        <li> <a id="a1" href="Gallery.html"> Gallery</a></li>
+        <li> <a id="a1" href="reservation.html"> Reservation</a></li>
+        <li> <a id="a1" href="contact-us.html"> Contact us</a></li>
+       
+      </ul>
+    </div>
+    
+
+
+    <!--  Section 1   -->
+    <h1> THE BEST OR NOTHING</h1>
+    <p class="sub-header">Unlock any road</p>
+    <div class="button">
+      <button class="section1-bt">See More</button>
+      <button class="section1-bt">Subscribe</button>
+    </div>
+  </div>
+
+
+  <!--  Section 2  -->
+
+  <h2>FEAUTURED VEICULES</h2>
+
+  <div class="ft-cars">
+    <div class="car-1">
+
+      <h3>THE i8</h3>
+      <h3>THE NEW BMW I8 SERIE</h3>
+      <button class="Section2-bt"> READ MORE</button>
+    </div>
+
+
+    <div class="car-1">
+      <h3>THE i8</h3>
+      <h3>THE NEW BMW I8 SERIE</h3>
+      <button class="Section2-bt"> READ MORE</button>
+    </div>
+  </div>
+
+  <div class="ft-camion">
+    <h3 class="h-camion">THE New Truck</h3>
+    <h3 class="h-camion">Mercedes-Benz 2653</h3>
+    <button class="camion-bt"> READ MORE</button>
+  </div>
+
+  <div class="ft-moto">
+    <div class="moto-1">
+      <h3>THE i8</h3>
+      <h3>THE NEW BMW I8 SERIE</h3>
+    </div>
+    <div class="moto-1">
+      <h3>THE i8</h3>
+      <h3>THE NEW BMW I8 SERIE</h3>
+    </div>
+    <div class="moto-1">
+      <h3>THE i8</h3>
+      <h3>THE NEW BMW I8 SERIE</h3>
+    </div>
+
+  </div>
+
+
+  <!--  footer -->
+  <footer>
+    <div class="box">
+      <h5>ABOUT</h5>
+      <p class="par-footer">RCars is a modern rental car company that aims to provide all types of cars for the
+        costumors needs
+        beginning from basic economy cars to luxury and high speed sportive cars . </p>
+    </div>
+    <div class="box1">
+      <h5>CATEGORIES</h5>
+      <ul class="ul-footer">
+        <li> Cars</li>
+        <li> Motorcycles</li>
+        <li> Trucks</li>
+      </ul>
+    </div>
+    
+  </footer>
+  <div class="copyright">Copyright © 2021 All Rights Reserved by RCars.</div>
+
+
+  <script>
+    var icon = document.getElementById("icon-nave")
+    var navUl1 = document.getElementById("nav-ul-1");
+    var h_style = document.querySelector("h1");
+    navUl1.style.display = 'none'; 
+    icon.addEventListener("click",function(){
+      if(navUl1.style.display == 'flex')
+      {
+        navUl1.style.display = 'none'; 
+        h_style.style.margin = '140px 0px 10px 0px';
+        
+      }
+      else
+      {
+        navUl1.style.display = 'flex';
+        h_style.style.marginTop = '40px';
+      }
+    })
+    
+  </script>
+
+
+
+</body>
+
+</html>

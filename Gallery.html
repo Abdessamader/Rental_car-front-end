@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  
+    <h3 class="log">RCars</h3>
+    <div class="nav">
+      <ul class="nav-ul">
+        <li> <a  href="index.html">Home</a></li>
+        <li> <a  href="Gallery.html"> Gallery</a></li>
+        <li> <a  href="reservation.html"> Reservation</a></li>
+        <li> <a  href="contact-us.html"> Contact us</a></li>
+        <li><img id="icon-nave" class="icon-nav" src="/icon/bars-solid.svg" alt=""></li>
+      </ul>
+      <ul id="nav-ul-1" class="nav-ul-1">
+        <li> <a id="a1" href="index.html">Home</a></li>
+        <li> <a id="a1" href="Gallery.html"> Gallery</a></li>
+        <li> <a id="a1" href="reservation.html"> Reservation</a></li>
+        <li> <a id="a1" href="contact-us.html"> Contact us</a></li>
+       
+      </ul>
+    </div>
+  <h1>OUR VEICULES</h1>
+    
+
+
+<h3>Cars</h3>
+  <div class="cars">
+    <img  class="img-cars"src="my images/car1.png"  alt="">
+    <img  class="img-cars"src="my images/car2.png" alt="">
+    <img  class="img-cars"src="/my images/car4.png" alt="">
+    <img  class="img-cars"src="/my images/car5.png" alt="">
+    <img  class="img-cars"src="my images/car3.png" alt="">
+    <img  class="img-cars"src="my images/car3.png" alt="">
+    <img  class="img-cars"src="my images/car3.png" alt="">
+    <img  class="img-cars"src="my images/car3.png" alt="">
+    <img  class="img-cars"src="my images/car3.png" alt="">
+</div>
+
+<br> <br><br><br>
+
+<h3>Motorcyles</h3>
+<div class="motor">
+  <img class="img-motor"src="/my images/moto1.png" alt="">
+  <img class="img-motor"src="/my images/moto2.png" alt="">
+  <img class="img-motor"src="/my images/moto3.png" alt="">
+  <img class="img-motor"src="/my images/moto4.png" alt="">
+  <img class="img-motor"src="/my images/moto1.png" alt="">
+  <img class="img-motor"src="/my images/moto1.png" alt="">
+  <img class="img-motor"src="/my images/moto1.png" alt="">
+  <img class="img-motor"src="/my images/moto1.png" alt="">
+  <img class="img-motor"src="/my images/moto5.png" alt="">
+</div>
+
+<br> <br><br><br>
+
+<h3>Trucks</h3>
+<div class="trucks">
+<img class="img-truck" src="/my images/Truck1.png" alt="">
+<img class="img-truck" src="/my images/Truck2.png" alt="">
+<img class="img-truck" src="/my images/Truck3.png" alt="">
+<img class="img-truck" src="/my images/Truck4.png" alt="">  
+</div>
+  
+  <!--  footer -->
+  <footer>
+    <div class="box">
+      <h5>ABOUT</h5>
+      <p class="par-footer">RCars is a modern rental car company that aims to provide all types of cars for the
+        costumors needs
+        beginning from basic economy cars to luxury and high speed sportive cars . </p>
+    </div>
+    <div class="box1">
+      <h5>CATEGORIES</h5>
+      <ul class="ul-footer">
+        <li> Cars</li>
+        <li> Motorcycles</li>
+        <li> Trucks</li>
+      </ul>
+    </div>
+    
+  </footer>
+  <div class="copyright">Copyright © 2021 All Rights Reserved by RCars.</div>
+
+
+  <script>
+    var icon = document.getElementById("icon-nave")
+    var navUl1 = document.getElementById("nav-ul-1");
+    var h_style = document.querySelector("h1");
+    navUl1.style.display = 'none'; 
+    icon.addEventListener("click",function(){
+      if(navUl1.style.display == 'flex')
+      {
+        navUl1.style.display = 'none'; 
+        h_style.style.margin = '40px 0px 10px 0px';
+        
+      }
+      else
+      {
+        navUl1.style.display = 'flex';
+        h_style.style.marginTop = '40px';
+      }
+    })
+    
+  </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
